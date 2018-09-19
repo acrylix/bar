@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+exists () {
+    type "$1" &> /dev/null ;
+}
+
+if exists /usr/local/bin/chunkc ; then
+     /usr/local/bin/chunkc tiling::query --desktop id  /usr/local/bin/chunkc tilting::query --desktop mode | sed 's/[0-9]/&|/'
+else
+   	echo "OFF"
+fi
+

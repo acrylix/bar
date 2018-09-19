@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+exists () {
+    type "$1" &> /dev/null ;
+}
+
+if exists /usr/local/bin/ifstat ; then
+	echo "$(/usr/local/bin/istats cpu | grep -o '[0-9]*.[0-9]*°C') UP $(bash $(dirname "$0")/down) DOWN $(bash $(dirname "$0")/up) | $(networksetup -getairportnetwork en0 | cut -c 24-)"
+else
+	echo "DOWN $(networksetup -getairportnetwork en0 | cut -c 24-)"
+fi
+

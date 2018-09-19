@@ -1,0 +1,8 @@
+#!/bin/bash
+
+bat(){
+echo "$(pmset -g batt | grep -o '[0-9]*%.*' | sed 's/present: true//g' | sed 's/;/ |/g' | sed 's/remaining//g')"
+}
+
+#bat | head -c 3
+bat
