@@ -49,6 +49,8 @@ render: (output) ->
     statusIcon = "<i class='fas fa-bolt'></i>"
   else if (status == "discharging")
     statusIcon = "<i class='fas fa-stopwatch'></i>"
+  else
+    statusIcon = "<i class='fas fa-question-circle'></i>"
 
   "#{style}<div class='screen'><div class='right2 quadrat' style='background-color: #{color}'>#{battery} #{statusIcon} #{values[2]}</div></div>"
 
