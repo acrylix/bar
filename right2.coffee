@@ -32,7 +32,7 @@ render: (output) ->
 
     @-webkit-keyframes NAME-YOUR-ANIMATION {
       0%, 50% {
-        background-color: #fc5c65;
+        background-color: #95afc0;
       }
       50%, 100% {
         background-color: #eb2f06;

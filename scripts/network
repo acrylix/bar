@@ -3,11 +3,9 @@
 exists () {
     type "$1" &> /dev/null ;
 }
-#CPU# $(/usr/local/bin/istats cpu | grep -o '[0-9]*.[0-9]*°C')
-
 
 if exists /usr/local/bin/ifstat ; then
-	echo "UP $(bash $(dirname "$0")/down) DOWN $(bash $(dirname "$0")/up) | $(networksetup -getairportnetwork en0 | cut -c 24-) % $(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep -o '\-[0-9]*' | head -n 1)"
+	echo "CPU $($(dirname "$0")/osx-cpu-temp) UP $(bash $(dirname "$0")/down) DOWN $(bash $(dirname "$0")/up) | $(networksetup -getairportnetwork en0 | cut -c 24-) % $(/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | grep -o '\-[0-9]*' | head -n 1)"
 else
 	echo "DOWN $(networksetup -getairportnetwork en0 | cut -c 24-)"
 fi

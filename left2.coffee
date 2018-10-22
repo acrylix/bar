@@ -13,6 +13,7 @@ render: (output) ->
     wifiColor = '#e74c3c'
 
   output = output.split('%')[0]
+  output = output.replace("CPU", "<i class='fas fa-microchip' style='color: grey'></i>")
   output = output.replace("|","<i class='fas fa-wifi' style='color: #1abc9c'></i>")
   output = output.replace("UP", "<i class='fas fa-upload'></i>")
   output = output.replace("DOWN", "<i class='fas fa-download'></i>")
