@@ -1,13 +1,28 @@
-# Pecan Bar Configs
+# StatusBar
+a better macos status bar
 
 ![alt text](https://github.com/acrylix/PecanBarConfig/blob/master/screenshots/screenshot.png?raw=true)
 
-# Requires
+# Features
 
-ifstat - for network info
+| Features     | Requirement
+| ------------ | ----------------------
+| WM info      | chunkwm + chunkc
+| CPU Temp     | `scripts/osx-cpu-temp`     
+| network info | `ifstat`
+| battery info | -
 
-chunkwm - window manager
 
-# How to Use
 
-clone repo into `Übersicht/widgets/Pecan`
+# Installation
+ 
+
+- Make sure Übersicht here http://tracesof.net/uebersicht/
+
+- clone into `Übersicht/widgets`
+
+- refresh widgets 
+
+
+-----
+Inspired by :star2:  https://github.com/zzzeyez/Pecan
