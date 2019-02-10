@@ -1,6 +1,10 @@
 command: "bash Pecan/scripts/ws"
 
-refreshFrequency: 0 # ms
+refreshFrequency: 1000 # ms
+
+style: """
+  z-index: 100
+"""
 
 render: (output) ->
 

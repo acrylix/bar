@@ -1,8 +1,9 @@
 command: "bash Pecan/scripts/network"
 
-refreshFrequency: 3000 # ms
+refreshFrequency: 10000 # ms
 
 style: """
+  z-index: 100
   right: 190px
 """
 render: (output) ->

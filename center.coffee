@@ -1,6 +1,6 @@
 command: "date +\"%a %b %d - %l:%M %p\""
 
-refreshFrequency: 1000
+refreshFrequency: 60000 #ms
 
 render: (output) ->
   values = output.split('-')

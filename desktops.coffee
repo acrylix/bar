@@ -1,6 +1,6 @@
 command: "echo $(x=$(/usr/local/bin/chunkc tiling::query -d id);echo $(/usr/local/bin/chunkc tiling::query -D $(/usr/local/bin/chunkc tiling::query -m id))\",$x\")"
 
-refreshFrequency: 0
+refreshFrequency: 1000
 
 render: (output) ->
   values = output.split(',')
@@ -27,6 +27,7 @@ render: (output) ->
   """
 
 style: """
+  z-index: 100
   left: 95px
   position: fixed
   margin-top: 8px
@@ -42,13 +43,16 @@ style: """
   li
     display: inline
     margin: 0 5px
-
+    padding:5px
     img
       max-height: 20px
       max-width: 20px
 
   li.active
     color: #ff7675
+    background-color:#353b48
+    padding:5px
+    border-bottom: 2px solid white
 """
 
 update: (output, domEl) ->

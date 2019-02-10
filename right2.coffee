@@ -1,9 +1,10 @@
 command: "bash Pecan/scripts/battery"
 
-refreshFrequency: 1000 # ms
+refreshFrequency: 60000 # ms
 
 style: """
   right: -136px
+  z-index: 100
   position: fixed
 """
 render: (output) ->
