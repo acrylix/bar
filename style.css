@@ -3,18 +3,18 @@
 :root {
   /* Choose background colors, ordered from left to right */
   /* Set --pecan-bg-center to "none" to have date's background same as bar */
-  --pecan-bg: #2d2a2e;
+  --pecan-bg: black;
   --pecan-bg-left: #ff7675;
   --pecan-bg-left2: none;
-  --pecan-bg-center: #0a3d62;
+  --pecan-bg-center: black;
   --pecan-bg-right2: #BDC581;
-  --pecan-bg-right: #b2bec3;;
+  --pecan-bg-right: none;
   /* Choose foreground colors */
   --pecan-fg-left: #2d3436;
   --pecan-fg-left2: #f5f5f5;
   --pecan-fg-center: #f5f5f5;
   --pecan-fg-right2: #2d3436;
-  --pecan-fg-right: #2d3436;
+  --pecan-fg-right: #f5f5f5;
   /* Opacity.  Change --pecan-opacity-center to 0 in order to hide date */
   /* --pecan-opacity affects --pecan-border, so set it to 0 if you would like */
   /* for every widget to appear independent. */
@@ -25,11 +25,11 @@
   --pecan-shadow: 0px 4px 10px 4px rgba(0,0,0,0.20);
   --pecan-shadow-inner: 0px 1px 1px 1px rgba(0,0,0,0.0);
   /* Bar's total height including --pecan-border and excluding padding */
-  --pecan-height: 20px;
+  --pecan-height: 23px;
   /* Entire bar's outer padding (use --pecan-border for space between widgets) */
   --pecan-padding-left: 10px;
   --pecan-padding-right:10px;
-  --pecan-padding-v: 2px;
+  --pecan-padding-v: 6px;
   /* Border size.  Also functions as space between widgets, */
   /* so set --pecan-opacity to 0 if you want widgets to appear independent */
   --pecan-border: 0px;
@@ -194,7 +194,7 @@
   opacity: var(--pecan-opacity-inner);
   padding: 0px var(--pecan-text-padding);
   top: var(--pecan-alignment-top);
-  right: -74px;
+  right: 0px;
   bottom: var(--pecan-alignment-bottom);
   left: auto;
   margin-top: calc(var(--pecan-padding-v) + var(--pecan-border));

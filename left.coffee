@@ -1,6 +1,6 @@
 command: "bash Pecan/scripts/ws"
 
-refreshFrequency: 500 # ms
+refreshFrequency: 0 # ms
 
 render: (output) ->
 
@@ -11,7 +11,7 @@ render: (output) ->
   if mode == "bsp"
     mode = "<i class='fas fa-th-large'></i>"
   else if mode == "mon"
-    mode = "<i class='fas fa-dice-one'></i>"
+    mode = "<i class='fas fa-square'></i>"
   else if mode == "flo"
     mode = "<i class='fas fa-clone'></i>"
 
